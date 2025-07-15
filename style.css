@@ -1,0 +1,55 @@
+/* Custom CSS */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF; /* Background putih bersih */
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes pulseFade {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply Animations */
+.animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+.animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+.animate-zoom-in { animation: zoomIn 1s ease-out forwards; }
+.animate-pulse-fade { animation: pulseFade 2s infinite ease-in-out; }
+
+/* Countdown specific styles */
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.countdown-item {
+    background-color: #EF4444; /* Red-600 */
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 4rem; /* Ensure consistent width */
+    text-align: center;
+}
+.countdown-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin-top: 0.25rem;
+}
